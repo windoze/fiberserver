@@ -1,0 +1,3 @@
+[submodule "boost-fiber"]
+	path = boost-fiber
+	url = git@github.com:windoze/boost-fiber.git

@@ -7,75 +7,575 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DFE752818B64D36005070FA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE752718B64D36005070FA /* main.cpp */; };
-		2DFE752A18B64D36005070FA /* fiberserver.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DFE752918B64D36005070FA /* fiberserver.1 */; };
+		2DFE74FC18B61A73005070FA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE742818B60FB6005070FA /* main.cpp */; };
+		2DFE74FD18B61A80005070FA /* round_robin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74AE18B61A4B005070FA /* round_robin.cpp */; };
+		2DFE74FE18B61A80005070FA /* barrier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74AF18B61A4B005070FA /* barrier.cpp */; };
+		2DFE74FF18B61A80005070FA /* condition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74B018B61A4B005070FA /* condition.cpp */; };
+		2DFE750018B61A80005070FA /* fiber_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74B218B61A4B005070FA /* fiber_base.cpp */; };
+		2DFE750118B61A80005070FA /* scheduler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74B318B61A4B005070FA /* scheduler.cpp */; };
+		2DFE750218B61A80005070FA /* spinlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74B418B61A4B005070FA /* spinlock.cpp */; };
+		2DFE750318B61A80005070FA /* fiber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74B518B61A4B005070FA /* fiber.cpp */; };
+		2DFE750418B61A80005070FA /* fiber_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74B618B61A4B005070FA /* fiber_group.cpp */; };
+		2DFE750518B61A80005070FA /* future.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74B718B61A4B005070FA /* future.cpp */; };
+		2DFE750618B61A80005070FA /* interruption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74B818B61A4B005070FA /* interruption.cpp */; };
+		2DFE750718B61A80005070FA /* mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74B918B61A4B005070FA /* mutex.cpp */; };
+		2DFE750818B61A80005070FA /* recursive_mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74BA18B61A4B005070FA /* recursive_mutex.cpp */; };
+		2DFE750918B61A80005070FA /* recursive_timed_mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74BB18B61A4B005070FA /* recursive_timed_mutex.cpp */; };
+		2DFE750A18B61A80005070FA /* round_robin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74BC18B61A4B005070FA /* round_robin.cpp */; };
+		2DFE750B18B61A80005070FA /* round_robin_ws.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74BD18B61A4B005070FA /* round_robin_ws.cpp */; };
+		2DFE750C18B61A80005070FA /* timed_mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE74BE18B61A4B005070FA /* timed_mutex.cpp */; };
+		2DFE751318B61AE9005070FA /* libboost_atomic-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFE750D18B61AE9005070FA /* libboost_atomic-mt.a */; };
+		2DFE751418B61AE9005070FA /* libboost_chrono-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFE750E18B61AE9005070FA /* libboost_chrono-mt.a */; };
+		2DFE751518B61AE9005070FA /* libboost_context-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFE750F18B61AE9005070FA /* libboost_context-mt.a */; };
+		2DFE751618B61AE9005070FA /* libboost_coroutine-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFE751018B61AE9005070FA /* libboost_coroutine-mt.a */; };
+		2DFE751718B61AE9005070FA /* libboost_system-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFE751118B61AE9005070FA /* libboost_system-mt.a */; };
+		2DFE751818B61AE9005070FA /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFE751218B61AE9005070FA /* libboost_thread-mt.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2DFE752218B64D36005070FA /* CopyFiles */ = {
+		2DFE741A18B60F94005070FA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				2DFE752A18B64D36005070FA /* fiberserver.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2DFE752418B64D36005070FA /* fiberserver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fiberserver; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DFE752718B64D36005070FA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		2DFE752918B64D36005070FA /* fiberserver.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = fiberserver.1; sourceTree = "<group>"; };
+		2DB3369218B65360008A8B88 /* .gitmodules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		2DFE741C18B60F94005070FA /* fiberserver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fiberserver; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFE742818B60FB6005070FA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2DFE742B18B61A4B005070FA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2DFE742D18B61A4B005070FA /* Jamfile.v2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jamfile.v2; sourceTree = "<group>"; };
+		2DFE742F18B61A4B005070FA /* acknowledgements.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acknowledgements.qbk; sourceTree = "<group>"; };
+		2DFE743018B61A4B005070FA /* asio.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = asio.qbk; sourceTree = "<group>"; };
+		2DFE743118B61A4B005070FA /* attributes.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attributes.qbk; sourceTree = "<group>"; };
+		2DFE743218B61A4B005070FA /* barrier.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = barrier.qbk; sourceTree = "<group>"; };
+		2DFE743318B61A4B005070FA /* condition_variables.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = condition_variables.qbk; sourceTree = "<group>"; };
+		2DFE743418B61A4B005070FA /* fiber.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fiber.qbk; sourceTree = "<group>"; };
+		2DFE743518B61A4B005070FA /* fibers.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fibers.qbk; sourceTree = "<group>"; };
+		2DFE743618B61A4B005070FA /* fibers.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fibers.xml; sourceTree = "<group>"; };
+		2DFE743718B61A4B005070FA /* fls.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fls.qbk; sourceTree = "<group>"; };
+		2DFE743818B61A4B005070FA /* future.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = future.qbk; sourceTree = "<group>"; };
+		2DFE743918B61A4B005070FA /* futures.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = futures.qbk; sourceTree = "<group>"; };
+		2DFE743C18B61A4B005070FA /* acknowledgements.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = acknowledgements.html; sourceTree = "<group>"; };
+		2DFE743D18B61A4B005070FA /* asio.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = asio.html; sourceTree = "<group>"; };
+		2DFE743F18B61A4B005070FA /* attributes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = attributes.html; sourceTree = "<group>"; };
+		2DFE744018B61A4B005070FA /* fiber.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fiber.html; sourceTree = "<group>"; };
+		2DFE744118B61A4B005070FA /* fiber_group.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fiber_group.html; sourceTree = "<group>"; };
+		2DFE744218B61A4B005070FA /* this_fiber.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = this_fiber.html; sourceTree = "<group>"; };
+		2DFE744318B61A4B005070FA /* fiber_mgmt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fiber_mgmt.html; sourceTree = "<group>"; };
+		2DFE744418B61A4B005070FA /* fls.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fls.html; sourceTree = "<group>"; };
+		2DFE744518B61A4B005070FA /* overview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = overview.html; sourceTree = "<group>"; };
+		2DFE744618B61A4B005070FA /* scheduling.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = scheduling.html; sourceTree = "<group>"; };
+		2DFE744718B61A4B005070FA /* stack.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = stack.html; sourceTree = "<group>"; };
+		2DFE744918B61A4B005070FA /* barriers.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = barriers.html; sourceTree = "<group>"; };
+		2DFE744A18B61A4B005070FA /* conditions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = conditions.html; sourceTree = "<group>"; };
+		2DFE744C18B61A4B005070FA /* future.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = future.html; sourceTree = "<group>"; };
+		2DFE744D18B61A4B005070FA /* packaged_task.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = packaged_task.html; sourceTree = "<group>"; };
+		2DFE744E18B61A4B005070FA /* promise.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = promise.html; sourceTree = "<group>"; };
+		2DFE744F18B61A4B005070FA /* futures.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = futures.html; sourceTree = "<group>"; };
+		2DFE745018B61A4B005070FA /* mutex_types.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mutex_types.html; sourceTree = "<group>"; };
+		2DFE745118B61A4B005070FA /* queues.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = queues.html; sourceTree = "<group>"; };
+		2DFE745218B61A4B005070FA /* synchronization.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = synchronization.html; sourceTree = "<group>"; };
+		2DFE745318B61A4B005070FA /* fiber_HTML.manifest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fiber_HTML.manifest; sourceTree = "<group>"; };
+		2DFE745418B61A4B005070FA /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		2DFE745518B61A4B005070FA /* Jamfile.v2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jamfile.v2; sourceTree = "<group>"; };
+		2DFE745618B61A4B005070FA /* mutexes.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mutexes.qbk; sourceTree = "<group>"; };
+		2DFE745718B61A4B005070FA /* overview.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = overview.qbk; sourceTree = "<group>"; };
+		2DFE745818B61A4B005070FA /* packaged_task.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = packaged_task.qbk; sourceTree = "<group>"; };
+		2DFE745918B61A4B005070FA /* promise.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = promise.qbk; sourceTree = "<group>"; };
+		2DFE745A18B61A4B005070FA /* queue.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = queue.qbk; sourceTree = "<group>"; };
+		2DFE745B18B61A4B005070FA /* scheduling.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scheduling.qbk; sourceTree = "<group>"; };
+		2DFE745C18B61A4B005070FA /* stack.qbk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stack.qbk; sourceTree = "<group>"; };
+		2DFE745F18B61A4B005070FA /* daytime_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = daytime_client.cpp; sourceTree = "<group>"; };
+		2DFE746018B61A4B005070FA /* daytime_client2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = daytime_client2.cpp; sourceTree = "<group>"; };
+		2DFE746118B61A4B005070FA /* echo_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = echo_client.cpp; sourceTree = "<group>"; };
+		2DFE746218B61A4B005070FA /* echo_client2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = echo_client2.cpp; sourceTree = "<group>"; };
+		2DFE746318B61A4B005070FA /* echo_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = echo_server.cpp; sourceTree = "<group>"; };
+		2DFE746418B61A4B005070FA /* echo_server2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = echo_server2.cpp; sourceTree = "<group>"; };
+		2DFE746618B61A4B005070FA /* publisher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = publisher.cpp; sourceTree = "<group>"; };
+		2DFE746718B61A4B005070FA /* server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
+		2DFE746818B61A4B005070FA /* subscriber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = subscriber.cpp; sourceTree = "<group>"; };
+		2DFE746918B61A4B005070FA /* barrier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = barrier.cpp; sourceTree = "<group>"; };
+		2DFE746A18B61A4B005070FA /* future.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = future.cpp; sourceTree = "<group>"; };
+		2DFE746B18B61A4B005070FA /* futures_mt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = futures_mt.cpp; sourceTree = "<group>"; };
+		2DFE746C18B61A4B005070FA /* interrupt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = interrupt.cpp; sourceTree = "<group>"; };
+		2DFE746D18B61A4B005070FA /* Jamfile.v2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jamfile.v2; sourceTree = "<group>"; };
+		2DFE746E18B61A4B005070FA /* join.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = join.cpp; sourceTree = "<group>"; };
+		2DFE746F18B61A4B005070FA /* ping_pong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ping_pong.cpp; sourceTree = "<group>"; };
+		2DFE747018B61A4B005070FA /* segmented_stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segmented_stack.cpp; sourceTree = "<group>"; };
+		2DFE747118B61A4B005070FA /* simple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simple.cpp; sourceTree = "<group>"; };
+		2DFE747518B61A4B005070FA /* algorithm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = algorithm.hpp; sourceTree = "<group>"; };
+		2DFE747618B61A4B005070FA /* all.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = all.hpp; sourceTree = "<group>"; };
+		2DFE747918B61A4B005070FA /* spawn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spawn.hpp; sourceTree = "<group>"; };
+		2DFE747A18B61A4B005070FA /* use_future.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = use_future.hpp; sourceTree = "<group>"; };
+		2DFE747B18B61A4B005070FA /* yield.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = yield.hpp; sourceTree = "<group>"; };
+		2DFE747C18B61A4B005070FA /* round_robin.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = round_robin.hpp; sourceTree = "<group>"; };
+		2DFE747D18B61A4B005070FA /* spawn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spawn.hpp; sourceTree = "<group>"; };
+		2DFE747E18B61A4B005070FA /* use_future.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = use_future.hpp; sourceTree = "<group>"; };
+		2DFE747F18B61A4B005070FA /* yield.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = yield.hpp; sourceTree = "<group>"; };
+		2DFE748018B61A4B005070FA /* attributes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = attributes.hpp; sourceTree = "<group>"; };
+		2DFE748118B61A4B005070FA /* barrier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = barrier.hpp; sourceTree = "<group>"; };
+		2DFE748218B61A4B005070FA /* bounded_queue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bounded_queue.hpp; sourceTree = "<group>"; };
+		2DFE748318B61A4B005070FA /* condition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = condition.hpp; sourceTree = "<group>"; };
+		2DFE748518B61A4B005070FA /* config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = config.hpp; sourceTree = "<group>"; };
+		2DFE748618B61A4B005070FA /* fiber_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fiber_base.hpp; sourceTree = "<group>"; };
+		2DFE748718B61A4B005070FA /* fiber_object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fiber_object.hpp; sourceTree = "<group>"; };
+		2DFE748818B61A4B005070FA /* flags.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = flags.hpp; sourceTree = "<group>"; };
+		2DFE748918B61A4B005070FA /* fss.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fss.hpp; sourceTree = "<group>"; };
+		2DFE748A18B61A4B005070FA /* interrupt_flags.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = interrupt_flags.hpp; sourceTree = "<group>"; };
+		2DFE748B18B61A4B005070FA /* main_notifier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = main_notifier.hpp; sourceTree = "<group>"; };
+		2DFE748C18B61A4B005070FA /* notify.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = notify.hpp; sourceTree = "<group>"; };
+		2DFE748D18B61A4B005070FA /* scheduler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scheduler.hpp; sourceTree = "<group>"; };
+		2DFE748E18B61A4B005070FA /* spinlock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spinlock.hpp; sourceTree = "<group>"; };
+		2DFE748F18B61A4B005070FA /* ws_queue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ws_queue.hpp; sourceTree = "<group>"; };
+		2DFE749018B61A4B005070FA /* exceptions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exceptions.hpp; sourceTree = "<group>"; };
+		2DFE749118B61A4B005070FA /* fiber.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fiber.hpp; sourceTree = "<group>"; };
+		2DFE749218B61A4B005070FA /* fiber_group.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fiber_group.hpp; sourceTree = "<group>"; };
+		2DFE749318B61A4B005070FA /* fss.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fss.hpp; sourceTree = "<group>"; };
+		2DFE749518B61A4B005070FA /* async.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = async.hpp; sourceTree = "<group>"; };
+		2DFE749718B61A4B005070FA /* shared_state.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shared_state.hpp; sourceTree = "<group>"; };
+		2DFE749818B61A4B005070FA /* shared_state_object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shared_state_object.hpp; sourceTree = "<group>"; };
+		2DFE749918B61A4B005070FA /* task_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = task_base.hpp; sourceTree = "<group>"; };
+		2DFE749A18B61A4B005070FA /* task_object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = task_object.hpp; sourceTree = "<group>"; };
+		2DFE749B18B61A4B005070FA /* future.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = future.hpp; sourceTree = "<group>"; };
+		2DFE749C18B61A4B005070FA /* future_status.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = future_status.hpp; sourceTree = "<group>"; };
+		2DFE749D18B61A4B005070FA /* packaged_task.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = packaged_task.hpp; sourceTree = "<group>"; };
+		2DFE749E18B61A4B005070FA /* promise.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = promise.hpp; sourceTree = "<group>"; };
+		2DFE749F18B61A4B005070FA /* future.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = future.hpp; sourceTree = "<group>"; };
+		2DFE74A018B61A4B005070FA /* interruption.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = interruption.hpp; sourceTree = "<group>"; };
+		2DFE74A118B61A4B005070FA /* mutex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mutex.hpp; sourceTree = "<group>"; };
+		2DFE74A218B61A4B005070FA /* operations.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = operations.hpp; sourceTree = "<group>"; };
+		2DFE74A318B61A4B005070FA /* queue_op_status.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = queue_op_status.hpp; sourceTree = "<group>"; };
+		2DFE74A418B61A4B005070FA /* recursive_mutex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = recursive_mutex.hpp; sourceTree = "<group>"; };
+		2DFE74A518B61A4B005070FA /* recursive_timed_mutex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = recursive_timed_mutex.hpp; sourceTree = "<group>"; };
+		2DFE74A618B61A4B005070FA /* round_robin.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = round_robin.hpp; sourceTree = "<group>"; };
+		2DFE74A718B61A4B005070FA /* round_robin_ws.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = round_robin_ws.hpp; sourceTree = "<group>"; };
+		2DFE74A818B61A4B005070FA /* stack_allocator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_allocator.hpp; sourceTree = "<group>"; };
+		2DFE74A918B61A4B005070FA /* timed_mutex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = timed_mutex.hpp; sourceTree = "<group>"; };
+		2DFE74AA18B61A4B005070FA /* unbounded_queue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = unbounded_queue.hpp; sourceTree = "<group>"; };
+		2DFE74AB18B61A4B005070FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		2DFE74AE18B61A4B005070FA /* round_robin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = round_robin.cpp; sourceTree = "<group>"; };
+		2DFE74AF18B61A4B005070FA /* barrier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = barrier.cpp; sourceTree = "<group>"; };
+		2DFE74B018B61A4B005070FA /* condition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = condition.cpp; sourceTree = "<group>"; };
+		2DFE74B218B61A4B005070FA /* fiber_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fiber_base.cpp; sourceTree = "<group>"; };
+		2DFE74B318B61A4B005070FA /* scheduler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scheduler.cpp; sourceTree = "<group>"; };
+		2DFE74B418B61A4B005070FA /* spinlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spinlock.cpp; sourceTree = "<group>"; };
+		2DFE74B518B61A4B005070FA /* fiber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fiber.cpp; sourceTree = "<group>"; };
+		2DFE74B618B61A4B005070FA /* fiber_group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fiber_group.cpp; sourceTree = "<group>"; };
+		2DFE74B718B61A4B005070FA /* future.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = future.cpp; sourceTree = "<group>"; };
+		2DFE74B818B61A4B005070FA /* interruption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = interruption.cpp; sourceTree = "<group>"; };
+		2DFE74B918B61A4B005070FA /* mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mutex.cpp; sourceTree = "<group>"; };
+		2DFE74BA18B61A4B005070FA /* recursive_mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = recursive_mutex.cpp; sourceTree = "<group>"; };
+		2DFE74BB18B61A4B005070FA /* recursive_timed_mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = recursive_timed_mutex.cpp; sourceTree = "<group>"; };
+		2DFE74BC18B61A4B005070FA /* round_robin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = round_robin.cpp; sourceTree = "<group>"; };
+		2DFE74BD18B61A4B005070FA /* round_robin_ws.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = round_robin_ws.cpp; sourceTree = "<group>"; };
+		2DFE74BE18B61A4B005070FA /* timed_mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timed_mutex.cpp; sourceTree = "<group>"; };
+		2DFE74C018B61A4B005070FA /* Jamfile.v2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jamfile.v2; sourceTree = "<group>"; };
+		2DFE74C118B61A4B005070FA /* test_barrier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_barrier.cpp; sourceTree = "<group>"; };
+		2DFE74C218B61A4B005070FA /* test_condition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_condition.cpp; sourceTree = "<group>"; };
+		2DFE74C318B61A4B005070FA /* test_condition_mt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_condition_mt.cpp; sourceTree = "<group>"; };
+		2DFE74C418B61A4B005070FA /* test_fiber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_fiber.cpp; sourceTree = "<group>"; };
+		2DFE74C518B61A4B005070FA /* test_fss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_fss.cpp; sourceTree = "<group>"; };
+		2DFE74C618B61A4B005070FA /* test_futures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_futures.cpp; sourceTree = "<group>"; };
+		2DFE74C718B61A4B005070FA /* test_futures_mt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_futures_mt.cpp; sourceTree = "<group>"; };
+		2DFE74C818B61A4B005070FA /* test_generic_locks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_generic_locks.cpp; sourceTree = "<group>"; };
+		2DFE74C918B61A4B005070FA /* test_lock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_lock.cpp; sourceTree = "<group>"; };
+		2DFE74CA18B61A4B005070FA /* test_migration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_migration.cpp; sourceTree = "<group>"; };
+		2DFE74CB18B61A4B005070FA /* test_mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_mutex.cpp; sourceTree = "<group>"; };
+		2DFE74CC18B61A4B005070FA /* test_mutex_mt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_mutex_mt.cpp; sourceTree = "<group>"; };
+		2DFE74CD18B61A4B005070FA /* test_unique_lock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_unique_lock.cpp; sourceTree = "<group>"; };
+		2DFE750D18B61AE9005070FA /* libboost_atomic-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_atomic-mt.a"; path = "/usr/local/Cellar/boost/1.55.0/lib/libboost_atomic-mt.a"; sourceTree = "<group>"; };
+		2DFE750E18B61AE9005070FA /* libboost_chrono-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_chrono-mt.a"; path = "/usr/local/Cellar/boost/1.55.0/lib/libboost_chrono-mt.a"; sourceTree = "<group>"; };
+		2DFE750F18B61AE9005070FA /* libboost_context-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_context-mt.a"; path = "/usr/local/Cellar/boost/1.55.0/lib/libboost_context-mt.a"; sourceTree = "<group>"; };
+		2DFE751018B61AE9005070FA /* libboost_coroutine-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_coroutine-mt.a"; path = "/usr/local/Cellar/boost/1.55.0/lib/libboost_coroutine-mt.a"; sourceTree = "<group>"; };
+		2DFE751118B61AE9005070FA /* libboost_system-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_system-mt.a"; path = "/usr/local/Cellar/boost/1.55.0/lib/libboost_system-mt.a"; sourceTree = "<group>"; };
+		2DFE751218B61AE9005070FA /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt.a"; path = "/usr/local/Cellar/boost/1.55.0/lib/libboost_thread-mt.a"; sourceTree = "<group>"; };
+		2DFE751918B61C9F005070FA /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		2DFE751A18B632B7005070FA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2DFE752118B64D36005070FA /* Frameworks */ = {
+		2DFE741918B60F94005070FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFE751318B61AE9005070FA /* libboost_atomic-mt.a in Frameworks */,
+				2DFE751418B61AE9005070FA /* libboost_chrono-mt.a in Frameworks */,
+				2DFE751518B61AE9005070FA /* libboost_context-mt.a in Frameworks */,
+				2DFE751618B61AE9005070FA /* libboost_coroutine-mt.a in Frameworks */,
+				2DFE751718B61AE9005070FA /* libboost_system-mt.a in Frameworks */,
+				2DFE751818B61AE9005070FA /* libboost_thread-mt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2DFE751B18B64D35005070FA = {
+		2DFE741318B60F93005070FA = {
 			isa = PBXGroup;
 			children = (
-				2DFE752618B64D36005070FA /* fiberserver */,
-				2DFE752518B64D36005070FA /* Products */,
+				2DB3369218B65360008A8B88 /* .gitmodules */,
+				2DFE751A18B632B7005070FA /* .gitignore */,
+				2DFE751918B61C9F005070FA /* CMakeLists.txt */,
+				2DFE750D18B61AE9005070FA /* libboost_atomic-mt.a */,
+				2DFE750E18B61AE9005070FA /* libboost_chrono-mt.a */,
+				2DFE750F18B61AE9005070FA /* libboost_context-mt.a */,
+				2DFE751018B61AE9005070FA /* libboost_coroutine-mt.a */,
+				2DFE751118B61AE9005070FA /* libboost_system-mt.a */,
+				2DFE751218B61AE9005070FA /* libboost_thread-mt.a */,
+				2DFE742A18B61A4B005070FA /* boost-fiber */,
+				2DFE742818B60FB6005070FA /* main.cpp */,
+				2DFE741D18B60F94005070FA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2DFE752518B64D36005070FA /* Products */ = {
+		2DFE741D18B60F94005070FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2DFE752418B64D36005070FA /* fiberserver */,
+				2DFE741C18B60F94005070FA /* fiberserver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2DFE752618B64D36005070FA /* fiberserver */ = {
+		2DFE742A18B61A4B005070FA /* boost-fiber */ = {
 			isa = PBXGroup;
 			children = (
-				2DFE752718B64D36005070FA /* main.cpp */,
-				2DFE752918B64D36005070FA /* fiberserver.1 */,
+				2DFE742B18B61A4B005070FA /* .gitignore */,
+				2DFE742C18B61A4B005070FA /* build */,
+				2DFE742E18B61A4B005070FA /* doc */,
+				2DFE745D18B61A4B005070FA /* examples */,
+				2DFE747218B61A4B005070FA /* include */,
+				2DFE74AB18B61A4B005070FA /* README.md */,
+				2DFE74AC18B61A4B005070FA /* src */,
+				2DFE74BF18B61A4B005070FA /* test */,
 			);
-			path = fiberserver;
+			path = "boost-fiber";
+			sourceTree = "<group>";
+		};
+		2DFE742C18B61A4B005070FA /* build */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE742D18B61A4B005070FA /* Jamfile.v2 */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		2DFE742E18B61A4B005070FA /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE742F18B61A4B005070FA /* acknowledgements.qbk */,
+				2DFE743018B61A4B005070FA /* asio.qbk */,
+				2DFE743118B61A4B005070FA /* attributes.qbk */,
+				2DFE743218B61A4B005070FA /* barrier.qbk */,
+				2DFE743318B61A4B005070FA /* condition_variables.qbk */,
+				2DFE743418B61A4B005070FA /* fiber.qbk */,
+				2DFE743518B61A4B005070FA /* fibers.qbk */,
+				2DFE743618B61A4B005070FA /* fibers.xml */,
+				2DFE743718B61A4B005070FA /* fls.qbk */,
+				2DFE743818B61A4B005070FA /* future.qbk */,
+				2DFE743918B61A4B005070FA /* futures.qbk */,
+				2DFE743A18B61A4B005070FA /* html */,
+				2DFE745518B61A4B005070FA /* Jamfile.v2 */,
+				2DFE745618B61A4B005070FA /* mutexes.qbk */,
+				2DFE745718B61A4B005070FA /* overview.qbk */,
+				2DFE745818B61A4B005070FA /* packaged_task.qbk */,
+				2DFE745918B61A4B005070FA /* promise.qbk */,
+				2DFE745A18B61A4B005070FA /* queue.qbk */,
+				2DFE745B18B61A4B005070FA /* scheduling.qbk */,
+				2DFE745C18B61A4B005070FA /* stack.qbk */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		2DFE743A18B61A4B005070FA /* html */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE743B18B61A4B005070FA /* fiber */,
+				2DFE745318B61A4B005070FA /* fiber_HTML.manifest */,
+				2DFE745418B61A4B005070FA /* index.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		2DFE743B18B61A4B005070FA /* fiber */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE743C18B61A4B005070FA /* acknowledgements.html */,
+				2DFE743D18B61A4B005070FA /* asio.html */,
+				2DFE743E18B61A4B005070FA /* fiber_mgmt */,
+				2DFE744318B61A4B005070FA /* fiber_mgmt.html */,
+				2DFE744418B61A4B005070FA /* fls.html */,
+				2DFE744518B61A4B005070FA /* overview.html */,
+				2DFE744618B61A4B005070FA /* scheduling.html */,
+				2DFE744718B61A4B005070FA /* stack.html */,
+				2DFE744818B61A4B005070FA /* synchronization */,
+				2DFE745218B61A4B005070FA /* synchronization.html */,
+			);
+			path = fiber;
+			sourceTree = "<group>";
+		};
+		2DFE743E18B61A4B005070FA /* fiber_mgmt */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE743F18B61A4B005070FA /* attributes.html */,
+				2DFE744018B61A4B005070FA /* fiber.html */,
+				2DFE744118B61A4B005070FA /* fiber_group.html */,
+				2DFE744218B61A4B005070FA /* this_fiber.html */,
+			);
+			path = fiber_mgmt;
+			sourceTree = "<group>";
+		};
+		2DFE744818B61A4B005070FA /* synchronization */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE744918B61A4B005070FA /* barriers.html */,
+				2DFE744A18B61A4B005070FA /* conditions.html */,
+				2DFE744B18B61A4B005070FA /* futures */,
+				2DFE744F18B61A4B005070FA /* futures.html */,
+				2DFE745018B61A4B005070FA /* mutex_types.html */,
+				2DFE745118B61A4B005070FA /* queues.html */,
+			);
+			path = synchronization;
+			sourceTree = "<group>";
+		};
+		2DFE744B18B61A4B005070FA /* futures */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE744C18B61A4B005070FA /* future.html */,
+				2DFE744D18B61A4B005070FA /* packaged_task.html */,
+				2DFE744E18B61A4B005070FA /* promise.html */,
+			);
+			path = futures;
+			sourceTree = "<group>";
+		};
+		2DFE745D18B61A4B005070FA /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE745E18B61A4B005070FA /* asio */,
+				2DFE746918B61A4B005070FA /* barrier.cpp */,
+				2DFE746A18B61A4B005070FA /* future.cpp */,
+				2DFE746B18B61A4B005070FA /* futures_mt.cpp */,
+				2DFE746C18B61A4B005070FA /* interrupt.cpp */,
+				2DFE746D18B61A4B005070FA /* Jamfile.v2 */,
+				2DFE746E18B61A4B005070FA /* join.cpp */,
+				2DFE746F18B61A4B005070FA /* ping_pong.cpp */,
+				2DFE747018B61A4B005070FA /* segmented_stack.cpp */,
+				2DFE747118B61A4B005070FA /* simple.cpp */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		2DFE745E18B61A4B005070FA /* asio */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE745F18B61A4B005070FA /* daytime_client.cpp */,
+				2DFE746018B61A4B005070FA /* daytime_client2.cpp */,
+				2DFE746118B61A4B005070FA /* echo_client.cpp */,
+				2DFE746218B61A4B005070FA /* echo_client2.cpp */,
+				2DFE746318B61A4B005070FA /* echo_server.cpp */,
+				2DFE746418B61A4B005070FA /* echo_server2.cpp */,
+				2DFE746518B61A4B005070FA /* publish_subscribe */,
+			);
+			path = asio;
+			sourceTree = "<group>";
+		};
+		2DFE746518B61A4B005070FA /* publish_subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE746618B61A4B005070FA /* publisher.cpp */,
+				2DFE746718B61A4B005070FA /* server.cpp */,
+				2DFE746818B61A4B005070FA /* subscriber.cpp */,
+			);
+			path = publish_subscribe;
+			sourceTree = "<group>";
+		};
+		2DFE747218B61A4B005070FA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE747318B61A4B005070FA /* boost */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2DFE747318B61A4B005070FA /* boost */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE747418B61A4B005070FA /* fiber */,
+			);
+			path = boost;
+			sourceTree = "<group>";
+		};
+		2DFE747418B61A4B005070FA /* fiber */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE747518B61A4B005070FA /* algorithm.hpp */,
+				2DFE747618B61A4B005070FA /* all.hpp */,
+				2DFE747718B61A4B005070FA /* asio */,
+				2DFE748018B61A4B005070FA /* attributes.hpp */,
+				2DFE748118B61A4B005070FA /* barrier.hpp */,
+				2DFE748218B61A4B005070FA /* bounded_queue.hpp */,
+				2DFE748318B61A4B005070FA /* condition.hpp */,
+				2DFE748418B61A4B005070FA /* detail */,
+				2DFE749018B61A4B005070FA /* exceptions.hpp */,
+				2DFE749118B61A4B005070FA /* fiber.hpp */,
+				2DFE749218B61A4B005070FA /* fiber_group.hpp */,
+				2DFE749318B61A4B005070FA /* fss.hpp */,
+				2DFE749418B61A4B005070FA /* future */,
+				2DFE749F18B61A4B005070FA /* future.hpp */,
+				2DFE74A018B61A4B005070FA /* interruption.hpp */,
+				2DFE74A118B61A4B005070FA /* mutex.hpp */,
+				2DFE74A218B61A4B005070FA /* operations.hpp */,
+				2DFE74A318B61A4B005070FA /* queue_op_status.hpp */,
+				2DFE74A418B61A4B005070FA /* recursive_mutex.hpp */,
+				2DFE74A518B61A4B005070FA /* recursive_timed_mutex.hpp */,
+				2DFE74A618B61A4B005070FA /* round_robin.hpp */,
+				2DFE74A718B61A4B005070FA /* round_robin_ws.hpp */,
+				2DFE74A818B61A4B005070FA /* stack_allocator.hpp */,
+				2DFE74A918B61A4B005070FA /* timed_mutex.hpp */,
+				2DFE74AA18B61A4B005070FA /* unbounded_queue.hpp */,
+			);
+			path = fiber;
+			sourceTree = "<group>";
+		};
+		2DFE747718B61A4B005070FA /* asio */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE747818B61A4B005070FA /* detail */,
+				2DFE747C18B61A4B005070FA /* round_robin.hpp */,
+				2DFE747D18B61A4B005070FA /* spawn.hpp */,
+				2DFE747E18B61A4B005070FA /* use_future.hpp */,
+				2DFE747F18B61A4B005070FA /* yield.hpp */,
+			);
+			path = asio;
+			sourceTree = "<group>";
+		};
+		2DFE747818B61A4B005070FA /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE747918B61A4B005070FA /* spawn.hpp */,
+				2DFE747A18B61A4B005070FA /* use_future.hpp */,
+				2DFE747B18B61A4B005070FA /* yield.hpp */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		2DFE748418B61A4B005070FA /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE748518B61A4B005070FA /* config.hpp */,
+				2DFE748618B61A4B005070FA /* fiber_base.hpp */,
+				2DFE748718B61A4B005070FA /* fiber_object.hpp */,
+				2DFE748818B61A4B005070FA /* flags.hpp */,
+				2DFE748918B61A4B005070FA /* fss.hpp */,
+				2DFE748A18B61A4B005070FA /* interrupt_flags.hpp */,
+				2DFE748B18B61A4B005070FA /* main_notifier.hpp */,
+				2DFE748C18B61A4B005070FA /* notify.hpp */,
+				2DFE748D18B61A4B005070FA /* scheduler.hpp */,
+				2DFE748E18B61A4B005070FA /* spinlock.hpp */,
+				2DFE748F18B61A4B005070FA /* ws_queue.hpp */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		2DFE749418B61A4B005070FA /* future */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE749518B61A4B005070FA /* async.hpp */,
+				2DFE749618B61A4B005070FA /* detail */,
+				2DFE749B18B61A4B005070FA /* future.hpp */,
+				2DFE749C18B61A4B005070FA /* future_status.hpp */,
+				2DFE749D18B61A4B005070FA /* packaged_task.hpp */,
+				2DFE749E18B61A4B005070FA /* promise.hpp */,
+			);
+			path = future;
+			sourceTree = "<group>";
+		};
+		2DFE749618B61A4B005070FA /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE749718B61A4B005070FA /* shared_state.hpp */,
+				2DFE749818B61A4B005070FA /* shared_state_object.hpp */,
+				2DFE749918B61A4B005070FA /* task_base.hpp */,
+				2DFE749A18B61A4B005070FA /* task_object.hpp */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		2DFE74AC18B61A4B005070FA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE74AD18B61A4B005070FA /* asio */,
+				2DFE74AF18B61A4B005070FA /* barrier.cpp */,
+				2DFE74B018B61A4B005070FA /* condition.cpp */,
+				2DFE74B118B61A4B005070FA /* detail */,
+				2DFE74B518B61A4B005070FA /* fiber.cpp */,
+				2DFE74B618B61A4B005070FA /* fiber_group.cpp */,
+				2DFE74B718B61A4B005070FA /* future.cpp */,
+				2DFE74B818B61A4B005070FA /* interruption.cpp */,
+				2DFE74B918B61A4B005070FA /* mutex.cpp */,
+				2DFE74BA18B61A4B005070FA /* recursive_mutex.cpp */,
+				2DFE74BB18B61A4B005070FA /* recursive_timed_mutex.cpp */,
+				2DFE74BC18B61A4B005070FA /* round_robin.cpp */,
+				2DFE74BD18B61A4B005070FA /* round_robin_ws.cpp */,
+				2DFE74BE18B61A4B005070FA /* timed_mutex.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		2DFE74AD18B61A4B005070FA /* asio */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE74AE18B61A4B005070FA /* round_robin.cpp */,
+			);
+			path = asio;
+			sourceTree = "<group>";
+		};
+		2DFE74B118B61A4B005070FA /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE74B218B61A4B005070FA /* fiber_base.cpp */,
+				2DFE74B318B61A4B005070FA /* scheduler.cpp */,
+				2DFE74B418B61A4B005070FA /* spinlock.cpp */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		2DFE74BF18B61A4B005070FA /* test */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE74C018B61A4B005070FA /* Jamfile.v2 */,
+				2DFE74C118B61A4B005070FA /* test_barrier.cpp */,
+				2DFE74C218B61A4B005070FA /* test_condition.cpp */,
+				2DFE74C318B61A4B005070FA /* test_condition_mt.cpp */,
+				2DFE74C418B61A4B005070FA /* test_fiber.cpp */,
+				2DFE74C518B61A4B005070FA /* test_fss.cpp */,
+				2DFE74C618B61A4B005070FA /* test_futures.cpp */,
+				2DFE74C718B61A4B005070FA /* test_futures_mt.cpp */,
+				2DFE74C818B61A4B005070FA /* test_generic_locks.cpp */,
+				2DFE74C918B61A4B005070FA /* test_lock.cpp */,
+				2DFE74CA18B61A4B005070FA /* test_migration.cpp */,
+				2DFE74CB18B61A4B005070FA /* test_mutex.cpp */,
+				2DFE74CC18B61A4B005070FA /* test_mutex_mt.cpp */,
+				2DFE74CD18B61A4B005070FA /* test_unique_lock.cpp */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2DFE752318B64D36005070FA /* fiberserver */ = {
+		2DFE741B18B60F94005070FA /* fiberserver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DFE752D18B64D36005070FA /* Build configuration list for PBXNativeTarget "fiberserver" */;
+			buildConfigurationList = 2DFE742518B60F94005070FA /* Build configuration list for PBXNativeTarget "fiberserver" */;
 			buildPhases = (
-				2DFE752018B64D36005070FA /* Sources */,
-				2DFE752118B64D36005070FA /* Frameworks */,
-				2DFE752218B64D36005070FA /* CopyFiles */,
+				2DFE741818B60F94005070FA /* Sources */,
+				2DFE741918B60F94005070FA /* Frameworks */,
+				2DFE741A18B60F94005070FA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -83,48 +583,64 @@
 			);
 			name = fiberserver;
 			productName = fiberserver;
-			productReference = 2DFE752418B64D36005070FA /* fiberserver */;
+			productReference = 2DFE741C18B60F94005070FA /* fiberserver */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2DFE751C18B64D35005070FA /* Project object */ = {
+		2DFE741418B60F93005070FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = 0d0a.com;
 			};
-			buildConfigurationList = 2DFE751F18B64D35005070FA /* Build configuration list for PBXProject "fiberserver" */;
+			buildConfigurationList = 2DFE741718B60F93005070FA /* Build configuration list for PBXProject "fiberserver" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 2DFE751B18B64D35005070FA;
-			productRefGroup = 2DFE752518B64D36005070FA /* Products */;
+			mainGroup = 2DFE741318B60F93005070FA;
+			productRefGroup = 2DFE741D18B60F94005070FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2DFE752318B64D36005070FA /* fiberserver */,
+				2DFE741B18B60F94005070FA /* fiberserver */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2DFE752018B64D36005070FA /* Sources */ = {
+		2DFE741818B60F94005070FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DFE752818B64D36005070FA /* main.cpp in Sources */,
+				2DFE750518B61A80005070FA /* future.cpp in Sources */,
+				2DFE750018B61A80005070FA /* fiber_base.cpp in Sources */,
+				2DFE750418B61A80005070FA /* fiber_group.cpp in Sources */,
+				2DFE750618B61A80005070FA /* interruption.cpp in Sources */,
+				2DFE74FC18B61A73005070FA /* main.cpp in Sources */,
+				2DFE750718B61A80005070FA /* mutex.cpp in Sources */,
+				2DFE750C18B61A80005070FA /* timed_mutex.cpp in Sources */,
+				2DFE750A18B61A80005070FA /* round_robin.cpp in Sources */,
+				2DFE750318B61A80005070FA /* fiber.cpp in Sources */,
+				2DFE74FF18B61A80005070FA /* condition.cpp in Sources */,
+				2DFE750918B61A80005070FA /* recursive_timed_mutex.cpp in Sources */,
+				2DFE74FE18B61A80005070FA /* barrier.cpp in Sources */,
+				2DFE750818B61A80005070FA /* recursive_mutex.cpp in Sources */,
+				2DFE750218B61A80005070FA /* spinlock.cpp in Sources */,
+				2DFE750B18B61A80005070FA /* round_robin_ws.cpp in Sources */,
+				2DFE74FD18B61A80005070FA /* round_robin.cpp in Sources */,
+				2DFE750118B61A80005070FA /* scheduler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2DFE752B18B64D36005070FA /* Debug */ = {
+		2DFE742318B60F94005070FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -149,19 +665,25 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/boost-fiber/include",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		2DFE752C18B64D36005070FA /* Release */ = {
+		2DFE742418B60F94005070FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -181,27 +703,41 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/boost-fiber/include",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		2DFE752E18B64D36005070FA /* Debug */ = {
+		2DFE742618B60F94005070FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.55.0/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		2DFE752F18B64D36005070FA /* Release */ = {
+		2DFE742718B60F94005070FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.55.0/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -209,24 +745,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DFE751F18B64D35005070FA /* Build configuration list for PBXProject "fiberserver" */ = {
+		2DFE741718B60F93005070FA /* Build configuration list for PBXProject "fiberserver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DFE752B18B64D36005070FA /* Debug */,
-				2DFE752C18B64D36005070FA /* Release */,
+				2DFE742318B60F94005070FA /* Debug */,
+				2DFE742418B60F94005070FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DFE752D18B64D36005070FA /* Build configuration list for PBXNativeTarget "fiberserver" */ = {
+		2DFE742518B60F94005070FA /* Build configuration list for PBXNativeTarget "fiberserver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DFE752E18B64D36005070FA /* Debug */,
-				2DFE752F18B64D36005070FA /* Release */,
+				2DFE742618B60F94005070FA /* Debug */,
+				2DFE742718B60F94005070FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2DFE751C18B64D35005070FA /* Project object */;
+	rootObject = 2DFE741418B60F93005070FA /* Project object */;
 }
