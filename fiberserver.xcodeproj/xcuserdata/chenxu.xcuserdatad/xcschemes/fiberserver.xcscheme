@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2DFE752318B64D36005070FA"
+               BlueprintIdentifier = "2DFE741B18B60F94005070FA"
                BuildableName = "fiberserver"
                BlueprintName = "fiberserver"
                ReferencedContainer = "container:fiberserver.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2DFE752318B64D36005070FA"
+            BlueprintIdentifier = "2DFE741B18B60F94005070FA"
             BuildableName = "fiberserver"
             BlueprintName = "fiberserver"
             ReferencedContainer = "container:fiberserver.xcodeproj">
@@ -51,7 +51,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2DFE752318B64D36005070FA"
+            BlueprintIdentifier = "2DFE741B18B60F94005070FA"
             BuildableName = "fiberserver"
             BlueprintName = "fiberserver"
             ReferencedContainer = "container:fiberserver.xcodeproj">
@@ -69,7 +69,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2DFE752318B64D36005070FA"
+            BlueprintIdentifier = "2DFE741B18B60F94005070FA"
             BuildableName = "fiberserver"
             BlueprintName = "fiberserver"
             ReferencedContainer = "container:fiberserver.xcodeproj">
